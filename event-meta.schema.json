@@ -1,0 +1,56 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://event.log.institute/event-meta.schema.json",
+	"title": "Event Meta",
+	"description": "Describes the schema of event design meta data",
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "Name of the event",
+			"type": "string",
+			"exclusiveMinimum": 0
+		},
+		"license": {
+			"description": "License information",
+			"type": "string",
+			"exclusiveMinimum": 0
+		},
+		"author": {
+			"description": "Name/Handle of the author",
+			"type": "string",
+			"exclusiveMinimum": 0
+		},
+		"location": {
+			"description": "Coordinates of the event location",
+			"type": "object",
+			"properties": {
+				"latitude": {
+					"description": "Latitude of geo coordinates",
+					"type": "string",
+					"exclusiveMinimum": 0
+				},
+				"longitude": {
+					"description": "Longitude of geo coordinates",
+					"type": "string",
+					"exclusiveMinimum": 0
+				}
+			},
+			"required": ["latitude", "longitude"]
+
+		},
+		"start-date": {
+			"description": "The official date and time of the start of the event",
+			"type": "string",
+			"format": "date-time",
+			"exclusiveMinimum": 0
+		},
+		"end-date": {
+			"description": "The official date and time of the end of the event",
+			"type": "string",
+			"format": "date-time",
+			"exclusiveMinimum": 0
+		}
+	}
+,
+	"required": ["name", "license", "author", "location", "start-date", "end-date"]
+}
