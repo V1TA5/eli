@@ -4,5 +4,9 @@
 	"author": "faab_e",
 	"location": {"latitude": "53.83420", "longitude": "10.70017"},
 	"start-date": "2023-11-03T17:00:00+01:00",
-	"end-date": "2023-11-04T20:00:00+01:00"
+	"end-date": "2023-11-04T20:00:00+01:00",
+	"version": 1,
+	"categories": {
+		"logo": ["nook2023.svg"]
+	}
 }

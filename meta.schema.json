@@ -49,8 +49,25 @@
 			"type": "string",
 			"format": "date-time",
 			"exclusiveMinimum": 0
+		},
+		"version": {
+			"description": "Version number of the design material",
+			"type": "integer",
+			"exclusiveMinimum": 0
+		},
+		"categories": {
+			"description": "Map single design assets to categories",
+			"type": "object",
+			"properties": {
+				"logo": {
+					"description": "Icon and logo files",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			}
 		}
-	}
-,
+	},
 	"required": ["name", "license", "author", "location", "start-date", "end-date"]
 }
