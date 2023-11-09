@@ -1,0 +1,7 @@
+ELI Rot: #AD0B00
+ELI-Blau: #0057AD
+ELI-Grün: #9DAD00
+ELI-Dunkelgrün: #575C31
+ELI-Dark: #331B1A
+
+Font: Fira-Sans
